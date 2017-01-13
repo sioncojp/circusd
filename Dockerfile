@@ -1,4 +1,4 @@
-FROM 137112412989.dkr.ecr.us-west-2.amazonaws.com/amazonlinux:latest
+FROM cetnos:6.8
 MAINTAINER Shohei Koyama sion_cojp@yahoo.co.jp
 
 # Install python
@@ -21,7 +21,6 @@ RUN curl -kL https://bootstrap.pypa.io/get-pip.py | python
 RUN pip install circus==0.13 \
   && mkdir /var/log/circusd && chmod 775 /var/log/circusd \
   && mkdir /etc/circusd/ && chmod 755 /etc/circusd/
-
 
 # Setting circus.ini
 ADD circus.ini /etc/circusd/
