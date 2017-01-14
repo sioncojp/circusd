@@ -1,4 +1,4 @@
-FROM cetnos:6.8
+FROM centos:6.8
 MAINTAINER Shohei Koyama sion_cojp@yahoo.co.jp
 
 # Install python

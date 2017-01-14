@@ -2,14 +2,14 @@
 * This repository makes the image https://hub.docker.com/r/sioncojp/circusd/
 
 # Usage
-## buid image
+## build image
 ```shell
 $ cd /path/to/sioncojp/circusd
 $ docker build -t "sioncojp/circusd:latest" .
 $ docker run
 ```
 
-## runing container
+## running container
 ```shell
 $ ls -1 /tmp/test/app1
 app
